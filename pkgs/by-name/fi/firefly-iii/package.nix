@@ -58,8 +58,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   };
 
   preInstall = ''
-    npm run prod --workspace=v1
-    npm run build --workspace=v2
+    npm run build --workspace=v3
   '';
 
   passthru = {
